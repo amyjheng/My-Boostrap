@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img center</title>
+    <style>
+        .wrap {
+            width: 800px;
+            height: 500px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .wrap img {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .4s;
+        }
+
+        .wrap img:hover {
+            transform: translate(-50%, -50%) scale(1.5, 1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="https://cdn.pixabay.com/photo/2020/01/31/07/26/chef-4807317_1280.jpg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+
+    <style>
+        .price {
+            color: lightcoral;
+        }
+
+        .price::before {
+            content: '$';
+            color: lightgreen;
+        }
+
+        .price::after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="price">14541</div>
+        <div class="price">14542</div>
+        <div class="price">14543</div>
+        <div class="price">14544</div>
+        <div class="price">14545</div>
+        <div class="price">14546</div>
+        <div class="price">14547</div>
+        <div class="price">14548</div>
+        <div class="price">14549</div>
+        <div class="price">145410</div>
+        <div class="price">145411</div>
+        <div class="price">145412</div>
+    </div>
+</body>
+
+</html>
